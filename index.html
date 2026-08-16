@@ -121,12 +121,27 @@
   .comment-post:disabled{opacity:0.5;}
 
   .save-state{position:fixed; bottom:10px; right:10px; font-size:10px; color:rgba(244,239,227,0.55); background:rgba(0,0,0,0.35); padding:4px 9px; border-radius:999px;}
+  .login-loading{font-size:12.5px; color:#6b6155;}
+   .meme-grid{
+    position: fixed; inset: 0; z-index: -1;
+    display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr); gap: 3px;
+  }
+  .meme-grid img{ width: 100%; height: 100%; object-fit: cover; display: block; }
+  
 </style>
 </head>
 <body>
 
 <!-- ===== Login screen ===== -->
 <div id="loginScreen">
+  <div id="loginScreen">
+  <div class="meme-grid">
+    <img src="preview.jpg">
+    <img src="preview%20(1).jpg">
+    <img src="preview%20(2).jpg">
+    <img src="preview%20(3).jpg">
+    <img src="preview%20(4).jpg">
+      </div>
   <div class="login-card">
     <h1>Stuttgart <em>Sept</em></h1>
     <div class="bw-strip">🥨 · 🍇 · 🏰 Baden-Württemberg</div>
